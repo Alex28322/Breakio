@@ -53,9 +53,10 @@
         display: flex;
         justify-content: space-between;
         width: 48.6%;
+        margin-bottom: 40px;
     }
     .intro__img{
-        width: 1280px;
+        width: 90%;
         height: 465px;
         border-radius: 20px;
         background: url("../img/photo.png") center no-repeat;
@@ -67,6 +68,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    padding: 0 80px;
 }
 .better__box {
 
@@ -117,12 +119,12 @@ border-radius: 16px;
 }
 .stories__show{
 overflow-x: hidden;
+        margin: 0 auto;
+        border-radius: 20px;
 }
 .stories__rewiews{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
 }
 .swiper-button-next,.swiper-button-prev{
     width: 48px !important;
@@ -182,7 +184,7 @@ display: inline-block;
     background: url("../img/icon-4.png");
 }
 .stories__scroll {
-    width: 1136px;
+    min-width: 1136px;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -206,6 +208,9 @@ display: flex;
 margin-top: 30px;
 border-radius: 0px 0px 16px 16px;
 }
+ .stories__container{
+    display: flex;
+ }
 .stories__icon {
 width: 48px;
 height: 48px;
@@ -273,6 +278,8 @@ position: relative;
 max-width: 900px;
 margin-top: 75px;
 position: relative;
+display: flex;
+justify-content: center;
 }
 .users__show {
 width: 84%;
@@ -305,6 +312,7 @@ margin-top: 15px;
 font-size: 35px;
 margin-top: 0px;
 margin-bottom: 20px;
+text-align: center;
 }
 .stories__subtitle {
 
@@ -326,10 +334,26 @@ align-items: center;
 
 }
 .users__icon {
-background: url("../img/icon-1.png") center no-repeat;
+
 width: 64px;
 height: 64px;
+
+}
+.users__icon-1{
+background: url("../img/icon-1.png") center no-repeat;    
 background-size: contain;
+}
+.users__icon-2{
+background: url("../img/icon-2.png") center no-repeat;
+background-size: contain;    
+}
+.users__icon-3{
+background: url("../img/icon-3.png") center no-repeat;
+background-size: contain;    
+}
+.users__icon-4{
+background: url("../img/icon-4.png") center no-repeat;
+background-size: contain;    
 }
 .users__subarticle {
 
@@ -338,7 +362,7 @@ background-size: contain;
 
 }
 .detailes {
-    padding: 60px 0 80px;
+    padding: 60px 80px 80px 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -366,11 +390,12 @@ color: #475569;
 .detailes__item-box {
     margin-top: 48px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-  
+    width: 100%;
 }
 .detailes__item {
-    width: 31%;
+    width: 47%;
 }
 .detailes__item-img {
 width: 64px;
@@ -417,7 +442,7 @@ font-size: 18px;
     background: url("../img/scope.svg") center no-repeat;
 }
 .question {
-    padding: 65px 0 80px;
+    padding: 65px 80px 80px 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -447,6 +472,7 @@ margin-bottom: 35px;
 .question__item-box {
     margin-top: 24px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     align-items: center;
@@ -460,17 +486,36 @@ margin-bottom: 35px;
     font-weight: 400;
 margin-top: 0px;
 margin-bottom: 0px;
+
+}
+.question__item-text-main{
+    width: 100%;
+    max-height: 0;
+  overflow: hidden;
+  transition: 0.3s ease;
+  margin: 0;
+&.active{
+    max-height: 200px;
+    margin-top: 16px;
+}
 }
 .question__item-arrow {
     background: url("../img/aroow__down__purple.svg") center no-repeat;
     width: 24px;
     height: 24px;
     background-size: contain;
+    transition: 0.3s transform ease;
+    &.active{
+transform: rotate(180deg);
+    }
+}
+@media(max-width:1300px){
+.stories__container{
+    max-width: 900px;
+    overflow-x: scroll;
+}
 }
 @media(max-width:1024px){
-    .nav_menu{
-        display: none;
-    }
     .nav_menu-mob{
 display: block;
     }
@@ -498,10 +543,13 @@ font-weight: 400;
 line-height: 22.4px;
     }
     .intro__img{
-        background: url("../img/photo-mob.png") center no-repeat;
         width: 90%;
-        margin-top: -80px;
-        margin-bottom: -40px;
+        margin-top: 0px;
+        height: 200px;
+        background-size: contain;
+    }
+    .intro{
+        margin-bottom: 0px;
     }
     .better__img{
         background: url("../img/better__frame-mob.png") center no-repeat;
@@ -509,21 +557,18 @@ line-height: 22.4px;
     }
     .stories__container{
         max-width: 700px;
-        width: 92%;
-        overflow-x: scroll;
     }
     .stories__rewiews{
-        width: 100%;
         .button{
             display: none;
         }
     }
     .stories__show{
-        width: 92%;
+        width: 80%;
         overflow-x: hidden;
+        margin: 0 auto;
+        border-radius: 20px;
     } 
-  
-   
     .stories__rewiews{
         justify-content: space-between;
     }
@@ -587,17 +632,14 @@ margin-top: 0;
     .intro__box{
         width: 92%;
     }
-    .intro{
-        margin-bottom: 0px;
-    }
+  
     .better__article{
         font-size: 24px;
         margin-top: 0px;
 
     } 
     .stories__container{
-        max-width: 400px;
-        width: 92%;
+        max-width: 600px;
         overflow-x: scroll;
     }
     .better__box{
@@ -622,6 +664,12 @@ margin-top: 0;
     .detailes{
         padding-bottom: 48px;
     }
+    .swiper-button-prev{
+        display: none;
+    }
+    .swiper-button-next{
+        display: none;
+    }
     .question{
         padding-top: 48px;
     }
@@ -631,11 +679,42 @@ margin-top: 0;
     .question__subartivle{
         margin-top: 0px;
     }
+    .stories__subarticle {
+        &.subarticle{
+font-size: 16px;
+        }
+    }
+    .users__text{
+        font-size: 16px;
+    }
+}
+@media(max-width:660px){
+.stories__container{
+    max-width: 500px;
+}
+}
+@media(max-width:550px){
+.stories__container{
+    max-width: 400px;
+}
+.better__box{
+    width: 90%;
+}
+.intro__box{
+    flex-wrap: wrap;
+}
+.intro__input{
+    padding: 12px 0px 12px 24px;
+    width: 100%;
+    margin-bottom: 18px;
+}
 }
 @media(max-width:460px){
     .stories__container{
         max-width: 300px;
-        width: 92%;
         overflow-x: scroll;
     }
+.intro__input{
+    width: 100%;
+}
 }

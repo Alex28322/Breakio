@@ -1,6 +1,9 @@
+html {
+  scroll-behavior: smooth;
+}
 .header {
 }
-.wraper{
+.wrapper{
     overflow: hidden;
 }
 body{
@@ -22,12 +25,6 @@ background: url("../img/logo.svg") center no-repeat;
 width: 108px;
 height: 35px;
 }
-.nav_menu-mob{
-    display: none;
-    width: 24px;
-    height: 24px;
-    background: url("../img/menu-mob.svg") center no-repeat;
-}
 .nav_menu {
 display: flex;
 justify-content: space-between;
@@ -48,6 +45,8 @@ border: none;
 padding: 12px 8px;
 background: transparent;
 transition: 0.3s;
+text-decoration: none;
+color: #0F172A;
 &.purple {
 color: white;
 background: rgba(192, 38, 211, 1);
@@ -78,8 +77,15 @@ background: transparent;
 }
 
 @media(max-width:1024px){
-    .nav_menu{
+    .nav_menu__button-header{
         display: none;
+        &.purple{
+            display: block;
+        }
+    }
+    .nav_menu{
+        justify-content: flex-end;
+        width: 70%;
     }
     .nav_menu-mob{
 display: block;
@@ -113,4 +119,11 @@ line-height: 22.4px;
     .header__box{
         padding: 16px;
     }
+}
+@media(max-width:420px){
+  .logo{
+    width: 90px;
+    height: 20px;
+    background-size: contain;
+  }
 }

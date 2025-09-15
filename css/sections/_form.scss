@@ -1,0 +1,137 @@
+.signin__form {
+ opacity: 0;
+  transform: scale(.95);
+  transition: opacity .25s ease, transform .25s ease;
+  pointer-events: none;
+  background-color: #ffffff;
+  border-radius: 80px;
+  padding: 0px 60px;
+&.active{
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+}
+textarea{
+    resize: none;
+}
+.overlay{
+    position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,.6);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+.overlay.show {
+    opacity: 1;
+  pointer-events: auto;
+}
+.form-box {
+background: linear-gradient(135deg,rgba(192, 38, 211, 1) 0%, rgba(113, 26, 118, 1) 100%);
+background-size: contain;
+width: 80%;
+background-color: #CAEAC7;
+padding: 40px;
+border-radius: 62px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 0 auto;
+}
+.input__box{
+display: flex;
+flex-wrap: wrap;
+margin-bottom: 20px;
+justify-content: space-between;
+width: 100%;
+}
+.signin__form-title{
+background: linear-gradient(135deg,rgba(192, 38, 211, 1) 0%, rgba(113, 26, 118, 1) 100%);
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent; 
+  background-clip: text; 
+  font-size: 42px;
+  text-align: center;
+  color: transparent; 
+  margin: 45px 0;
+}
+.signin__form-input{
+    padding: 18px 24px;
+    font-size: 24px;
+    width: 100%;
+    display: inline-block;
+    font-weight: 400;
+    border-radius: 26px;
+    color: #475569;
+}
+.signin__form-label{
+width: 100%;
+margin: 0px;
+font-size: 14px;
+font-weight: 400;
+margin-bottom: 5px;
+}
+.signin__form-input-long{
+    width: 100%;
+    font-family: sans-serif, "Roboto";
+     min-height: 80px
+}
+.signin__form-button{
+     width: 200px;
+    height: 65px;
+padding: 15px 40px 20px;
+background-color: #ffffff;
+border: transparent;
+border-radius: 26px;
+}
+.signin__form-button-text{
+    font-size: 28px;
+background: linear-gradient(135deg,rgba(192, 38, 211, 1) 0%, rgba(113, 26, 118, 1) 100%);
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent; 
+  background-clip: text; 
+font-weight: bolder;
+}
+@media (max-width:750px){
+  .signin__form{
+    padding: 0;
+    border-radius: 20px;
+  }
+  .signin__form-title{
+    font-size: 22px;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 18px;
+  }
+  .signin__form-label{
+    font-size: 10px;
+    margin-left: 10px;
+  }
+    .input__box{
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    .form-box{
+      padding: 16px;
+      border-radius: 12px;
+    }
+    .signin__form-button-text{
+      font-size: 16px;
+    }
+    .signin__form-input{
+        width: 100%;
+        font-size: 14px;
+        padding: 16px;
+        margin-bottom: 10px;
+    }
+    .signin__form-button{
+      width: 100px;
+    height: 35px;
+    padding: 0;
+    }
+}

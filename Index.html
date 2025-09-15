@@ -12,17 +12,43 @@
 </head>
 <body>
     <div class="wrapper">
+        <div class="overlay">
+        <form action="" class="signin__form">
+            <h3 class="signin__form-title">Leave your contacts so we can rich you</h3>
+            <div class="form-box">
+                <div class="input__box">
+                <label class="signin__form-label" for="username">Name</label>
+                <input class="signin__form-input" id="username" type="text" placeholder="Your name" required>
+                </div>
+                <div class="input__box">
+                <label class="signin__form-label" for="contacts">Surname</label>
+                <input class="signin__form-input" id="contacts" type="text" placeholder="Your surname" required>
+                </div>
+                <div class="input__box">
+                <label class="signin__form-label" for="contacts">Email</label>
+                <input class="signin__form-input" id="contacts" type="email" placeholder="Your email" required>
+                </div>
+                <div class="input__box">
+                <label class="signin__form-label" for="purpose">How can we help you?</label>
+                <textarea class="signin__form-input-long signin__form-input" placeholder="What’s been weighing on you lately? " name="purpose" id="purpose" minlength="20" maxlength="1000" rows="2" required></textarea>
+                </div>
+                <button class="signin__form-button">
+                    <span class="signin__form-button-text">Send</span>
+                </button>
+            </div>
+        </form>
+</div>
         <header class="header">
             <div class="header__box container">
             <a class="logo"></a>
             <div class="nav_menu-mob"></div>
             <div class="nav_menu">
-                <button class="nav_menu__button-header button">Explore</button>
-                <button class="nav_menu__button-header button">Solutions</button>
-                <button class="nav_menu__button-header button">About</button>
-                <button class="nav_menu__button-header button">Blog</button>
-                <button class="nav_menu__button-header button">Log In</button>
-                <button class="nav_menu__button-header purple button">Start Now</button>
+                <a href="#sectionExplore" class="nav_menu__button-header button">Explore</a>
+                <a href="#sectionExperience"class="nav_menu__button-header button">Experience</a>
+                <a href="#sectionTools" class="nav_menu__button-header button">Tools</a>
+                <a href="#sectionQuestions" class="nav_menu__button-header button">Questions</a>
+                <button class="nav_menu__button-header button button-form">Log In</button>
+                <button class="nav_menu__button-header purple button button-form">Start Now</button>
             </div>
             </div>
         </header>
@@ -32,27 +58,23 @@
                 <h5 class="intro__subarticle subarticle">Build your meditation skills with an app that gives you all you need!</h5>
                 <div class="intro__box">
                 <input class="intro__input" type="text" name="" id="" placeholder="Enter your name">
-                <button class="nav_menu__button-head purple button">Start Now</button>
+                <button class="nav_menu__button-head purple button button-form">Start Now</button>
             </div>
                 <div class="intro__img"></div>
             </div>
             <div class="better container">
                 <h1 class="better__article article">Get better everyday</h1>
-                <h5 class="better__subarticle subarticle">Et pulvinar nec interdum integer id urna molestie porta nullam. A, donec ornare sed turpis pulvinar purus maecenas quam a. Erat porttitor pharetra sed in mauris elementum sollicitudin.</h5>
+                <h5 class="better__subarticle subarticle">Your feelings matter, even on the days when it’s hard to put them into words. Here, you can pause, reflect, and honestly record your emotional state without judgment. Over time, these small check-ins help you notice patterns, reduce stress, and gain a clearer understanding of yourself.</h5>
                 <div class="better__box">
-                <button class="nav_menu__button-head purple button">Start Now</button>
+                <button class="nav_menu__button-head nav_menu__button-head-main purple button button-form ">Start Now</button>
             </div>
-                <div class="better__img"></div>
             </div>
-            <div class="stories container">
+            <div id="sectionExplore" class="stories container">
                 <h1 class="stories__article-main article">Stories from our users</h1>
-                <h5 class="stories__subarticle subarticle">Et pulvinar nec interdum integer id urna molestie porta nullam. A, donec ornare sed turpis pulvinar purus maecenas quam a. Erat porttitor pharetra sed in mauris elementum sollicitudin.</h5>
-                   
+                <h5 class="stories__subarticle subarticle">Everyone’s journey is different, but many people find comfort and clarity here. We invite you to read their honest words and see how these simple tools have made a difference.</h5>
                 <div class="stories__rewiews">
-                        <button class="button__left-gray buttom"></button>
                         <div class="stories__show">  
                         <div class="stories__container">   
-                           
                     <div class="stories__scroll">
                         <div class="stories__box">
                             <div class="stories__img-flowers stories__img"></div>
@@ -95,12 +117,12 @@
                             </div>
                         </div>
                     </div>
-                 
                 </div>
             </div> 
             </div>
+            
             </div> 
-            <div class="users container">
+            <div id="sectionExperience" class="users container">
                 <div class="users__vector-1"></div>
                 <div class="users__vector-2"></div>
                 <h1 class="users__article-main article">What other users say</h1>
@@ -112,12 +134,12 @@
                             <div class="swiper-wrapper">
                               <div class=" swiper-slide">
                                 <div class="users__box stories__box">
-                                    <h5 class="users__subtitle stories__subtitle">Placerat feugiat senectus</h5>
-                                    <p class="users__text stories__text">Ultricies pharetra arcu turpis dui massa interdum lorem. Viverra nunc quisque congue tincidunt potenti. Tellus, enim vel habitasse commodo ultrices aenean ultricies.</p>
+                                    <h5 class="users__subtitle stories__subtitle">Overall review</h5>
+                                    <p class="users__text stories__text">“Clean, quiet, and private. That’s all I wanted, and that’s what I got. I use it in the mornings to set my thoughts straight.”</p>
                                     <div class="users__box-group stories__box-group">
                                         <div class="users__titles stories__titles">
-                                            <div class="users__icon"></div>
-                                            <div class="users__article stories__article">Jane Doe</div>
+                                            <div class="users__icon users__icon-1"></div>
+                                            <div class="users__article stories__article">Pauseandreflect</div>
                                             <div class="users__subarticle stories__subarticle">Senior Designer</div>
                                         </div>
                                     </div>
@@ -126,36 +148,39 @@
                               <div class="swiper-slide">
                                
                         <div class="users__box stories__box">
-                            <h5 class="users__subtitle stories__subtitle">Placerat feugiat senectus</h5>
-                            <p class="users__text stories__text">Ultricies pharetra arcu turpis dui massa interdum lorem. Viverra nunc quisque congue tincidunt potenti. Tellus, enim vel habitasse commodo ultrices aenean ultricies.</p>
+                            <h5 class="users__subtitle stories__subtitle">My experience</h5>
+                            <p class="users__text stories__text">“The experience was very grounding. I wasn’t looking for anything complicated—just a quiet, non-judgmental place to slow down and check in with myself. That’s exactly what I found. No pressure, no unnecessary noise. I could write about how I felt without having to explain or justify anything. That alone made it worth it.”</p>
                             <div class="users__box-group stories__box-group">
                                 <div class="users__titles stories__titles">
-                                    <div class="users__article stories__article">Jane Doe</div>
-                                    <div class="users__subarticle stories__subarticle">Senior Designer</div>
+                                    <div class="users__icon users__icon-2"></div>
+                                    <div class="users__article stories__article">Olivia Garcia</div>
+                                    <div class="users__subarticle stories__subarticle">Freelance Photographer</div>
                                 </div>
                             </div>
                         </div>
                               </div>
                               <div class="swiper-slide">
                                 <div class="users__box stories__box">
-                                    <h5 class="users__subtitle stories__subtitle">Placerat feugiat senectus</h5>
-                                    <p class="users__text stories__text">Ultricies pharetra arcu turpis dui massa interdum lorem. Viverra nunc quisque congue tincidunt potenti. Tellus, enim vel habitasse commodo ultrices aenean ultricies.</p>
+                                    <h5 class="users__subtitle stories__subtitle">My Breakio</h5>
+                                    <p class="users__text stories__text">“There’s something comforting about knowing this space exists. When I didn’t feel like talking to anyone but still wanted to process what I was going through, I came here. Just writing a few lines helped me sort things out. It’s not flashy, but it does what it promises—and sometimes that’s all you need.”</p>
                                     <div class="users__box-group stories__box-group">
                                         <div class="users__titles stories__titles">
-                                            <div class="users__article stories__article">Jane Doe</div>
-                                            <div class="users__subarticle stories__subarticle">Senior Designer</div>
+                                            <div class="users__icon users__icon-3"></div>
+                                            <div class="users__article stories__article">Amanda</div>
+                                            <div class="users__subarticle stories__subarticle">University Student</div>
                                         </div>
                                     </div>
                                 </div>
                               </div>
                               <div class="swiper-slide">
                                 <div class="users__box stories__box">
-                                    <h5 class="users__subtitle stories__subtitle">Placerat feugiat senectus</h5>
-                                    <p class="users__text stories__text">Ultricies pharetra arcu turpis dui massa interdum lorem. Viverra nunc quisque congue tincidunt potenti. Tellus, enim vel habitasse commodo ultrices aenean ultricies.</p>
+                                    <h5 class="users__subtitle stories__subtitle">Overall review</h5>
+                                    <p class="users__text stories__text">“From a usability perspective, this platform does several things right: responsive design, fast loading, clear form structure, and a smooth emotional input section. But what impressed me more was the tone—it strikes a rare balance between professionalism and genuine empathy. That’s hard to get right, and it makes a difference for the user experience.”</p>
                                     <div class="users__box-group stories__box-group">
                                         <div class="users__titles stories__titles">
-                                            <div class="users__article stories__article">Jane Doe</div>
-                                            <div class="users__subarticle stories__subarticle">Senior Designer</div>
+                                            <div class="users__icon users__icon-4"></div>
+                                            <div class="users__article stories__article">Linda Brown</div>
+                                            <div class="users__subarticle stories__subarticle">Nurse</div>
                                         </div>
                                     </div>
                                 </div>
@@ -170,147 +195,80 @@
 </div>
             </div>
             </div>
-            <div class="detailes container">
+            <div id="sectionTools" class="detailes container">
                 <div class="detailes__article-box">
                     <h2 class="detailes__artivle article">Your favourite tools</h2>
-                    <p class="detailes__subartivle">In risus nec molestie at in pulvinar tellus. At integer id condimentum gravida nisi nisl. Sem vitae porttitor arcu congue sem erat et sit faucibus. Sollicitudin elit gravida tellus mattis porttitor.</p>
+                    <p class="detailes__subartivle">Our service provides numerous approaches thanks to which we effectively work with a wide range of complex situations. And also we take care of your privacy.</p>
                 </div>
                 <div class="detailes__item-box">
                     <div class="detailes__item">
                         <div class="detailes__item-img post"></div>
-                        <div class="detailes__item-article">Sapien amet est</div>
-                        <div class="detailes__item-text">Viverra netus odio nunc ac nibh lorem iaculis. Orci facilisis habitasse cursus tempor et.</div>
+                        <div class="detailes__item-article">Emotional Check-In & Daily Reflection Reminders</div>
+                        <div class="detailes__item-text">Start each day with a gentle prompt to reflect on how you’re feeling. We send short, supportive reminders directly to your inbox—helping you stay emotionally aware and connected to yourself.</div>
                     </div>
                     <div class="detailes__item">
                         <div class="detailes__item-img map"></div>
-                        <div class="detailes__item-article">Tortor ornare</div>
-                        <div class="detailes__item-text">Nulla etiam mattis amet suspendisse lacus nulla sed urna ultricies. </div>
-                    </div>
-                    <div class="detailes__item">
-                        <div class="detailes__item-img sheme"></div>
-                        <div class="detailes__item-article">Vel lacus</div>
-                        <div class="detailes__item-text">Porttitor quis lectus varius quis dolor morbi massa pellentesque.</div>
+                        <div class="detailes__item-article">Location-Based Mood Tracking or Journaling</div>
+                        <div class="detailes__item-text">Track how your mood shifts in different environments. Our location-aware journaling feature helps you notice patterns—whether certain places calm you, stress you, or lift your spirits.</div>
                     </div>
                 </div>
                 <div class="detailes__item-box">
                     <div class="detailes__item">
                         <div class="detailes__item-img lock"></div>
-                        <div class="detailes__item-article">Hendrerit blandit</div>
-                        <div class="detailes__item-text">A aliquam pharetra in nec vitae ultrices commodo placerat eget.</div>
+                        <div class="detailes__item-article">Private & Secure Emotional Journaling</div>
+                        <div class="detailes__item-text">Everything you share stays private. Our secure journaling feature allows you to track your emotional state over time without worry—your data is encrypted and never shared without your consent.</div>
                     </div>
                     <div class="detailes__item">
-                        <div class="detailes__item-img buttons"></div>
-                        <div class="detailes__item-article">Enim risus turpis</div>
-                        <div class="detailes__item-text">Tristique dui vestibulum senectus ac duis etiam adipiscing sapien.</div>
-                    </div>
-                    <div class="detailes__item">
-                        <div class="detailes__item-img M"></div>
-                        <div class="detailes__item-article">Aliquam lorem et</div>
-                        <div class="detailes__item-text">Suspendisse ultrices morbi iaculis sit lorem. Mauris nulla odio est a mi a sed.</div>
+                        <div class="detailes__item-img pig"></div>
+                        <div class="detailes__item-article">Free & Affordable Mental Health Support Tools</div>
+                        <div class="detailes__item-text">Mental wellness shouldn’t be a luxury. We offer essential self-help tools and daily practices at no cost, with affordable upgrade options for those who want more personalized features.</div>
                     </div>
                 </div>
                 <div class="detailes__item-box">
-                    <div class="detailes__item">
-                        <div class="detailes__item-img pig"></div>
-                        <div class="detailes__item-article">Sed aliquam lectus</div>
-                        <div class="detailes__item-text">Rhoncus ut montes quis eget vulputate. Id hac consectetur ornare neque.</div>
-                    </div>
-                    <div class="detailes__item">
+    <div class="detailes__item">
                         <div class="detailes__item-img flag"></div>
-                        <div class="detailes__item-article">Cursus diam</div>
-                        <div class="detailes__item-text">Feugiat consectetur eu commodo odio venenatis pretium libero. Volutpat ultricies nisl turpis id.</div>
-                    </div>
-                    <div class="detailes__item">
-                        <div class="detailes__item-img scope"></div>
-                        <div class="detailes__item-article">Facilisi vel malesuada</div>
-                        <div class="detailes__item-text">Nibh cursus ultricies id neque proin urna vivamus bibendum. Quam sit platea integer sit.</div>
+                        <div class="detailes__item-article">Daily Guided Check-Ins</div>
+                        <div class="detailes__item-text">Our guided check-ins walk you through a series of thoughtful prompts, helping you slow down and reflect on what you’re feeling—no guesswork, just clarity.</div>
                     </div>
                 </div>
             </div>
-            <div class="question container">
+            <div id="sectionQuestions" class="question container">
                 <div class="question__article-box">
                     <h2 class="question__artivle article">Frequently asked questions</h2>
-                    <p class="question__subartivle">Et pulvinar nec interdum integer id urna molestie porta nullam. A, donec ornare sed turpis pulvinar purus maecenas quam a. Erat porttitor pharetra sed in mauris elementum sollicitudin.</p>
+                    <p class="question__subartivle">Here are answers to some of the most common things people ask us. Whether you're new to the platform or just curious about how things work, this section is here to help you feel informed and supported.</p>
                 </div>
                 <div class="question__item-box">
-                <p class="question__item-text">Enim sodales consequat adipiscing facilisis massa venenatis, non lorem lobortis?</p>
+                <p class="question__item-text">Is this platform a replacement for therapy?</p>
                 <div class="question__item-arrow"></div>
+                <p class="question__item-text-main">No, this platform is not a replacement for professional therapy or mental health treatment. Our tools are designed to support emotional awareness, daily reflection, and personal growth—but they are not intended to diagnose or treat mental health conditions. If you're experiencing serious emotional distress, we encourage you to seek support from a licensed mental health professional.</p>
                 </div>
                 <div class="question__item-box">
-                <p class="question__item-text">Venenatis nulla sagittis nunc, lobortis nec sollicitudin neque, dolor?</p>
-                <div class="question__item-arrow"></div>
+                <p class="question__item-text">How is my personal data and emotional input protected?</p>
+                 <div class="question__item-arrow"></div>
+               <p class="question__item-text-main">Your privacy and safety are a top priority. All emotional check-ins and personal information are stored securely using encryption and industry-standard protection methods. We do not sell, share, or expose your data to third parties, and you are always in control of what you choose to share or delete.</p>
+               
                 </div>
                 <div class="question__item-box">
-                <p class="question__item-text">Varius ultricies molestie tellus fermentum, viverra ipsum scelerisque etiam lorem?</p>
+                <p class="question__item-text">Can I use the platform anonymously?</p>
                 <div class="question__item-arrow"></div>
+               <p class="question__item-text-main">Yes, you can. We understand that emotional reflection is deeply personal, and that’s why we allow you to use the platform without revealing your identity. You can check in, write, and track your emotions without creating a public profile or sharing personal details.</p>
+                
                 </div>
                 <div class="question__item-box">
-                <p class="question__item-text">Nulla etiam vitae, at sagittis, nibh ultrices mattis feugiat faucibus?</p>
+                <p class="question__item-text">How often should I check in with my emotions?</p>
                 <div class="question__item-arrow"></div>
+                <p class="question__item-text-main">There’s no right or wrong frequency—it depends on your needs. Some users prefer to check in daily as part of a morning or evening routine, while others use it a few times a week or only during stressful moments. We encourage you to find a rhythm that feels natural and supportive for you.</p>
+                
                 </div>
                 <div class="question__item-box">
-                <p class="question__item-text">Sagittis consectetur gravida nec turpis eros, id sit et, dictum?</p>
+                <p class="question__item-text">Is the service free to use? Are there any paid features?</p>
                 <div class="question__item-arrow"></div>
+                <p class="question__item-text-main">Yes, the core features of the platform are completely free to use. This includes emotional check-ins, journaling, and basic reflection tools. We may offer optional paid features in the future—such as advanced analytics, guided exercises, or personalized insights—but the main experience will always remain free.</p>
+                
                 </div>
             </div>
         </main>
         <footer class="footer">
-<div class="container catalogue">
-<div class="catalogue__column">
-    <div class="catalogue__column-item">Categories</div>
-    <div class="catalogue__column-item">User Interface</div>
-    <div class="catalogue__column-item">User Experience</div>
-    <div class="catalogue__column-item">Digital Media</div>
-    <div class="catalogue__column-item">Lifestyle</div>
-    <div class="catalogue__column-item">Programming</div>
-    <div class="catalogue__column-item">Animation</div>
-</div>
-<div class="catalogue__column">
-    <div class="catalogue__column-item">Product</div>
-    <div class="catalogue__column-item">Pricing</div>
-    <div class="catalogue__column-item">Overview</div>
-    <div class="catalogue__column-item">Browse</div>
-    <div class="catalogue__column-item">Accessibility</div>
-    <div class="catalogue__column-item">Five</div>
-    <div class="catalogue__column-item">Changelog</div>
-</div>
-<div class="catalogue__column">
-    <div class="catalogue__column-item">Solutions</div>
-    <div class="catalogue__column-item">Brainstorming</div>
-    <div class="catalogue__column-item">Ideation</div>
-    <div class="catalogue__column-item">Wireframing</div>
-    <div class="catalogue__column-item">Research</div>
-    <div class="catalogue__column-item">Design</div>
-    <div class="catalogue__column-item">Concept</div>
-</div>
-<div class="catalogue__column">
-    <div class="catalogue__column-item">Resources</div>
-    <div class="catalogue__column-item">Help Center</div>
-    <div class="catalogue__column-item">Blog</div>
-    <div class="catalogue__column-item">Tutorials</div>
-    <div class="catalogue__column-item">FAQs</div>
-    <div class="catalogue__column-item">Community</div>
-    <div class="catalogue__column-item">Events</div>
-</div>
-<div class="catalogue__column">
-    <div class="catalogue__column-item">Support</div>
-    <div class="catalogue__column-item">Contact Us</div>
-    <div class="catalogue__column-item">Developers</div>
-    <div class="catalogue__column-item">Documentation</div>
-    <div class="catalogue__column-item">Integrations</div>
-    <div class="catalogue__column-item">Reports</div>
-    <div class="catalogue__column-item">Webinar</div>
-</div>
-<div class="catalogue__column">
-    <div class="catalogue__column-item">Company</div>
-    <div class="catalogue__column-item">About</div>
-    <div class="catalogue__column-item">Press</div>
-    <div class="catalogue__column-item">Events</div>
-    <div class="catalogue__column-item">Careers</div>
-    <div class="catalogue__column-item">Customers</div>
-    <div class="catalogue__column-item">Partners</div>
-</div>
-</div>
 <div class="container footer__menu">
 <div class="logo-box">
     <div class="logo-footer"></div>
