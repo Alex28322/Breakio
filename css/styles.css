@@ -872,6 +872,12 @@ button {
     width: 100%;
   }
 }
+@media (max-width: 360px) {
+  .stories__container {
+    max-width: 260px;
+    overflow-x: scroll;
+  }
+}
 .catalogue {
   display: flex;
   justify-content: space-between;
