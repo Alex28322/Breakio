@@ -708,6 +708,12 @@ font-size: 16px;
     width: 100%;
     margin-bottom: 18px;
 }
+.better{
+    padding: 0;
+}
+.stories{
+    padding: 40px 0;
+}
 }
 @media(max-width:460px){
     .stories__container{
@@ -722,5 +728,26 @@ font-size: 16px;
    .stories__container{
         max-width: 260px;
         overflow-x: scroll;
+    }
+    .stories__subarticle{
+        font-size: 10px;
+    }
+    .stories__article{
+        font-size: 12px;
+        margin-top: 0px;
+    }
+    .stories__icon{
+        width: 36px;
+        height: 36px;
+    }
+    .stories__box-group{
+        margin-top: 16px;
+    }
+    .stories__scroll{
+        min-width: 800px;
+        justify-content: space-around;
+    }
+    .stories__img{
+        width: 166px;
     }
 }
